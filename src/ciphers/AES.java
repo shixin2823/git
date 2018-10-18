@@ -301,7 +301,13 @@ public class AES {
 
 		return cells;
 	}
-
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Returns the 128-bit BigInteger representation of the input of an array of
 	 * 8-bit integers.
@@ -322,14 +328,12 @@ public class AES {
 
 		return new BigInteger(blockBits, 2);
 	}
-
 	/*
 	 * Returns ciphertext XOR key
 	 */
 	public static BigInteger addRoundKey(BigInteger ciphertext, BigInteger key) {
 		return ciphertext.xor(key);
 	}
-
 	/*
 	 * substitutes 8-Bit long substrings of the input using the S-Box and
 	 * returns the result.
@@ -359,7 +363,6 @@ public class AES {
 
 		return mergeCellsIntoBlock(cells);
 	}
-
 	/*
 	 * Cell permutation step. Shifts cells within the rows of the input and
 	 * returns the result.
